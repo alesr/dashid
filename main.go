@@ -17,7 +17,12 @@ const (
 func main() {
 	cmdArgs := os.Args
 	if len(cmdArgs) < 2 {
-		fmt.Println("Usage ...")
+		fmt.Printf(
+			"Usage:\n" +
+				"\tdashid b0dbb233-0d7e-4fdc-8d34-bfc32262f937 to remove dashes\n" +
+				"\tor\n" +
+				"\tdashid b0dbb2330d7e4fdc8d34bfc32262f937 to add dashes\n",
+		)
 		os.Exit(1)
 	}
 
